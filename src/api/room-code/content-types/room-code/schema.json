@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "room_codes",
+  "info": {
+    "singularName": "room-code",
+    "pluralName": "room-codes",
+    "displayName": "room_code"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "room_name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "dateStart": {
+      "type": "datetime"
+    },
+    "dateEnd": {
+      "type": "datetime"
+    },
+    "fullName": {
+      "type": "string"
+    },
+    "reservedFor": {
+      "type": "string"
+    },
+    "eventType": {
+      "type": "string"
+    },
+    "things_needed": {
+      "type": "string"
+    }
+  }
+}

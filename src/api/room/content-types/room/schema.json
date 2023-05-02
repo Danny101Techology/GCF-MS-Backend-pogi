@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rooms",
+  "info": {
+    "singularName": "room",
+    "pluralName": "rooms",
+    "displayName": "Rooms"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "room_code": {
+      "type": "string"
+    },
+    "available": {
+      "type": "boolean"
+    },
+    "capacity": {
+      "type": "integer"
+    },
+    "site": {
+      "type": "string"
+    },
+    "room_name": {
+      "type": "string"
+    },
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
