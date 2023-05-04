@@ -1,7 +1,7 @@
 module.exports = ({ env }) => ({
   upload: {
     config: {
-      provider: "aws-s3",
+      provider: "digitalocean",
       providerOptions: {
         accessKeyId: env("DO_SPACES_KEY"), // Your DigitalOcean Space access key
         secretAccessKey: env("DO_SPACES_SECRET"), // Your DigitalOcean Space secret key
