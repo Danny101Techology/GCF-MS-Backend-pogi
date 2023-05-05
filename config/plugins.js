@@ -1,21 +1,14 @@
 module.exports = ({ env }) => ({
   upload: {
-    config: {
-      provider: "digitalocean",
-      providerOptions: {
-        accessKeyId: env("DO_SPACES_KEY"), // Your DigitalOcean Space access key
-        secretAccessKey: env("DO_SPACES_SECRET"), // Your DigitalOcean Space secret key
-        region: env("DO_SPACES_REGION"), // Your DigitalOcean Space region
-        params: {
-          Bucket: env("DO_SPACES_BUCKET"), // Your DigitalOcean Space name
-        },
+    provider: "aws-s3",
+    providerOptions: {
+      accessKeyId: env("DO_SPACES_KEY"),
+      secretAccessKey: env("DO_SPACES_SECRET"),
+      region: env("DO_SPACES_REGION"),
+      params: {
+        Bucket: env("DO_SPACES_BUCKET"),
       },
-    },
-    actionOptions: {
-      upload: {},
-      uploadStream: {},
-      delete: {},
+      baseUrl: `https://${env("DO_SPACES_BUCKET")}.${env("DO_SPACES_REGION")}.digitaloceanspaces.com`,
     },
   },
 });
-//asdasdasdassda
